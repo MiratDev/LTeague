@@ -19,21 +19,21 @@ page: 'Home'
     %p.sub-head A simple, sortable table to quickly compare basic features between various Squarespace Templates
 
 
-
 .page-body
   .content-wrap
     .container
-      %table.comparison.dataTable.display
+      %h2 Templates
+      %table.comparison.display.responsive
         %thead
           %tr
             %th Name
-            %th Categories
-            %th Page Header Style
-            %th Index (Y/N)
-            %th Sidebar Type
-            %th Nav Type
-            %th Secondary Nav (Y/N)
-            %th Links
+            %th.tablet.desktop Categories
+            %th.desktop Page Header Style
+            %th.desktop Index (Y/N)
+            %th.desktop Sidebar Type
+            %th.desktop Nav Type
+            %th.tablet.desktop Secondary Nav (Y/N)
+            %th.desktop Links
         %tfoot
           %tr
             %th Name
@@ -164,47 +164,47 @@ page: 'Home'
               %a{:href => 'http://boutique-demo.squarespace.com/read-me/', :target => '_blank'} Readme
 
           %tr
-            %td Name
-            %td Categories
-            %td Header Style
+            %td Bryant
+            %td Business
+            %td Full Width, Image&Text
             %td Index?
             %td Sidebar Type
-            %td Nav Type
-            %td Secondary Nav?
+            %td Static, Fixed (In Index)
+            %td Footer
             %td
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://bryant-demo.squarespace.com/', :target => '_blank'} Demo
               %br
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Readme
+              %a{:href => 'http://bryant-demo.squarespace.com/read-me', :target => '_blank'} Readme
 
           %tr
-            %td Name
-            %td Categories
-            %td Header Style
-            %td Index?
-            %td Sidebar Type
-            %td Nav Type
-            %td Secondary Nav?
+            %td Charlotte
+            %td Weddings
+            %td Full Width, Image&Text
+            %td Yes
+            %td None
+            %td Static, Fixed (In Index)
+            %td 
             %td
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://charlotte-demo.squarespace.com/', :target => '_blank'} Demo
               %br
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Readme
+              %a{:href => 'http://charlotte-demo.squarespace.com/read-me', :target => '_blank'} Readme
 
           %tr
-            %td Name
-            %td Categories
-            %td Header Style
-            %td Index?
-            %td Sidebar Type
-            %td Nav Type
-            %td Secondary Nav?
+            %td Dovetail
+            %td Business, Stores
+            %td Image
+            %td No
+            %td Blog
+            %td Static
+            %td 
             %td
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://dovetail-demo.squarespace.com/', :target => '_blank'} Demo
               %br
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Readme
+              %a{:href => 'http://dovetail-demo.squarespace.com/read-me', :target => '_blank'} Readme
 
           %tr
-            %td Name
-            %td Categories
+            %td Encore
+            %td Musician
             %td Header Style
             %td Index?
             %td Sidebar Type
@@ -215,4 +215,10 @@ page: 'Home'
               %br
               %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Readme
 
-
+      .footnotes
+        .row
+          .col-xs-12
+            %h3 Additional Information
+            %ol
+              %li Example fact one.
+              %li Example face two.
