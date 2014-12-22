@@ -1,0 +1,16 @@
+// Site colours
+$agile-green: #bdd73d;
+$agile-blue: #385052;
+$gray-md: #464646;
+$white: #faf9f5;
+
+// Put your variables (colours, sizes, etc.) in here
+$body-font-color: #333;
+$body-line-height: 1.4;
+$link-color: $agile-green;
+$link-hover-color: darken($agile-green, 10%);
+
+// Breakpoint vars
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;

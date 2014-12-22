@@ -1,0 +1,20 @@
+.menu-wrap
+  .container
+    %a.menu-logo{:href => '/'}
+
+    .menu
+      %button.menu-toggle
+
+      %ul.menu-links
+        %li.menu-home
+          %a{:href => '/', :class => "#{'current' if current_page.data.page == 'Home'}"} Home
+        %li.menu-about
+          %a{:href => '/about/', :class => "#{'current' if current_page.data.page == 'About'}"} About
+        %li.menu-services
+          %a{:href => '/services/', :class => "#{'current' if current_page.data.page == 'Services'}"} Services
+        %li.menu-case-studies
+          %a{:href => '/case-studies/', :class => "#{'current' if current_page.data.page == 'Case Studies'}"} Case Studies
+        %li.menu-blog
+          %a{:href => 'http://blog.agilestyle.com/', :target => '_blank'} Blog
+        %li.menu-contact
+          %a{:href => '/contact/', :class => "#{'current' if current_page.data.page == 'Contact'}"} Contact

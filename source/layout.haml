@@ -1,0 +1,97 @@
+!!!
+%html{:lang=>'en'}
+  %head
+    %meta{:charset=>'utf-8'}
+
+    :plain
+      <!--
+
+                  III                                                     III
+                 IIIIII                                                  IIIII
+                IIIIIIII       888888888888           8888888888       IIIIIIII
+               IIIIIIII      8888888888888888       88888888888888      IIIIIIII
+              IIIIIIII       88888888888888888     888888888888888       IIIIIIII
+             IIIIIIII        888888888888888888   8888888888888888        IIIIIIII
+            IIIIIIII                    8888888   8888888                  IIIIIIII
+           IIIIIIII                     8888888   8888888                   IIIIIIII
+          IIIIIIII                      8888888   888888888888               IIIIIIII
+         IIIIIIII             8888888888888888    88888888888888              IIIIIIII
+         IIIIIIII           888888888888888888     88888888888888             IIIIIIII
+          IIIIIIII          8888888888888888888          8888888888          IIIIIIII
+           IIIIIIII         8888888     8888888             8888888         IIIIIIII
+            IIIIIIII        8888888     8888888             8888888        IIIIIIII
+             IIIIIIII       8888888888888888888   88888888888888888       IIIIIIII
+              IIIIIIII       888888888888888888   8888888888888888       IIIIIIII
+               IIIIIIII       88888888888888888   888888888888888       IIIIIIII
+                IIIIIIII          888888888           8888888          IIIIIIII
+                 IIIIII                                                 IIIIII
+                  III                                                     III
+
+                      Like what you see? We hire curious people like you.
+                                   Email ashley@agilestyle.com
+
+      -->
+
+    %meta{:name=>'viewport', :content=>'width=device-width, initial-scale=1, user-scalable=no'}
+
+    %title= "#{current_page.data.title} | AgileStyle"
+    %meta{:name=>'description', :content => "#{current_page.data.description}"}
+
+    %meta{content: 'website', property: 'og:type'}
+    %meta{content: "AgileStyle", property: 'og:og:site_name'}
+    %meta{content: "#{current_page.data.title}", property: 'og:title'}
+    %meta{content: "http://www.agilestyle.com#{current_page.url}", property: 'og:url'}
+    %meta{content: 'http://www.agilestyle.com/favicon-share.png', property: 'og:image'}
+
+    %meta{content: 'summary', property: 'twitter:card'}
+    %meta{content: '@AgileStyleInc', property: 'twitter:site'}
+    %meta{content: "#{current_page.data.title}", property: 'twitter:title'}
+    %meta{content: "#{current_page.data.description}", property: 'twitter:description'}
+    %meta{content: "http://www.agilestyle.com#{current_page.url}", property: 'twitter:url'}
+
+    %link{href: '//fonts.googleapis.com/css?family=Bitter:400,400italic', rel: 'stylesheet', type: 'text/css'}
+    %link{href: '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css', rel: 'stylesheet', type: 'text/css'}
+
+    = stylesheet_link_tag 'application.css'
+    = stylesheet_link_tag 'print.css', :media => 'print'
+    = javascript_include_tag 'application.js'
+
+    /[if lt IE 9]
+      = javascript_include_tag 'html5shiv.js'
+
+  %body{:class => page_classes}
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-1478414-6', 'agilestyle.com');
+      ga('send', 'pageview');
+
+    = yield
+
+    .footer-wrap
+      %footer.container
+        .row
+          .footer-column.col-sm-4
+            %h5.footer-header AgileStyle
+            %p
+              = link_to '#204 8540-109 ST', 'https://goo.gl/maps/ORL2A', target: "_blank"
+              Edmonton, Alberta, Canada
+              %br
+              T6G 1E6
+              %br
+              %a{:href => 'tel://780-218-3344'}<
+                780&#8209;218&#8209;3344
+
+          .footer-column.col-sm-4
+            %h5.footer-header Connect with Us
+            %a{:href => 'http://agilestyle.com/contact/'} Contact
+            %a{:target => '_blank', :href => 'https://twitter.com/AgileStyleInc'} Twitter
+            %a{:target => '_blank', :href => 'https://www.facebook.com/AgileStyleInc'} Facebook
+            %a{:target => '_blank', :href => 'https://github.com/agilestyleinc'} GitHub
+            -#%a{:target => '_blank', :href => 'http://agilestyle.squarespace.com/'} Blog
+
+          .footer-column.col-sm-4
+            %h5.footer-header= "&copy; 2007-#{Time.now.year} AgileStyle Inc."

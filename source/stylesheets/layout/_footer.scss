@@ -1,0 +1,48 @@
+.footer-wrap {
+  @include header-font-stack-3;
+  font-weight: normal;
+  background: $gray-md;
+  color: $white !important;
+  font-size: 12px !important;
+  line-height: 1.9;
+
+  .container {
+    padding: 15px;
+  }
+
+  a { display: block; }
+}
+
+.footer-header {
+  color: $white;
+  font-size: 12px;
+}
+
+.footer-logo {
+  display: inline-block;
+  width: 69px;
+  height: 24px;
+  background: url(../images/logo-small-sprite.png) repeat-x right center;
+}
+
+.footer-column {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+@include respond-to(sm) {
+  .footer-column {
+    text-align: left;
+  }
+
+  .footer-wrap {
+    .container {
+      padding: 60px 15px;
+    }
+  }
+
+  a[href^='tel:'] {
+    pointer-events: none;
+    color: $white;
+  }
+};

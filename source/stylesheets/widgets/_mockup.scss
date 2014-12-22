@@ -1,0 +1,87 @@
+.mockup-wrap {
+  position: relative;
+  padding: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    margin-top: 73.448275862069%;
+  }
+
+  &:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
+  &.right {
+    width: 75%;
+    float: left;
+    margin: 30px 12.5%;
+  }
+
+  &.left {
+    display: none;
+    float: left;
+    width: 50%;
+    margin-left: -16.6666666666667%;
+  }
+
+  &.center {
+    width: 75%;
+    float: left;
+    margin: 30px 12.5%;
+  }
+
+  @include respond-to(sm) {
+    &.left { display: block; }
+
+    &.right {
+      width: 50%;
+      float: left;
+      margin-right: -50%;
+    }
+  }
+}
+
+.mockup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url(../images/mac-screen.png) center center no-repeat;
+    background-size: contain;
+    top: 0;
+    right: -18.965517241379%;
+    bottom: 0;
+    left: -18.965517241379%;
+    z-index: 50;
+  }
+
+  @include respond-to(sm) {
+    margin-right: 0;
+  }
+}
+
+.mockup-image-container {
+  position: absolute;
+  overflow: hidden;
+  top: 7.276995305164%;
+  right: 5%;
+  bottom: 15.258215962441%;
+  left: 5%;
+  text-align: center;
+}
+
+.mockup-image {
+  display: inline-block;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 -9999px;
+}

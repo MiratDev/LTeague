@@ -1,0 +1,48 @@
+.definition {
+  display: inline;
+  position: relative;
+  border-bottom: 1px dashed $agile-green;
+}
+
+.definition:hover {
+  text-decoration: none;
+}
+
+.definition:hover:after {
+  background: #fff;
+  background: -moz-linear-gradient(top, rgba(255,255,255,0.95) 0%, rgba(237,237,237,0.95) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.95)), color-stop(100%,rgba(237,237,237,0.95))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0.95) 0%,rgba(237,237,237,0.95) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(255,255,255,0.95) 0%,rgba(237,237,237,0.95) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(255,255,255,0.95) 0%,rgba(237,237,237,0.95) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%,rgba(237,237,237,0.95) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', endColorstr='#f2ededed',GradientType=0 ); /* IE6-9 */
+  border-radius: .5em;
+  bottom: 100%;
+  margin-bottom: 10px;
+  color: $agile-blue;
+  font-size: 16px;
+  font-style: italic;
+  content: attr(data-tooltip);
+  display: block;
+  left: 50%;
+  margin-left: -135px;
+  padding: 20px;
+  width: 270px;
+  position: absolute;
+  z-index: 98;
+}
+
+.definition:hover:before {
+  border: solid;
+  border-color: #ededed transparent;
+  border-color: rgba(237,237,237,0.95) transparent;
+  border-width: 10px 20px 0 20px;
+  bottom: 100%;
+  content: "";
+  display: block;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  z-index: 99;
+}

@@ -1,0 +1,11 @@
+html, body {
+  background-color: #faf9f5;
+}
+
+.page-body {
+  padding: 40px 0;
+
+  @include respond-to (sm) {
+    padding: 70px 0;
+  }
+}

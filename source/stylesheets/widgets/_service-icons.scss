@@ -1,0 +1,50 @@
+%funnel-icon,
+%service-icon {
+  // background: url(../images/service-icons.png) no-repeat left top;
+  width: 110px;
+  height: 110px;
+}
+
+%service-icon {
+  background: url(../images/service-icons.png) no-repeat left top;
+}
+
+%funnel-icon { margin: 0 auto 30px; }
+
+%service-icon {
+  float: right;
+  margin-top: -10px;
+  margin-right: -15px;
+}
+
+$offset: 110;
+$i: 0;
+$classes: "define", "build", "improve", "measure", "train";
+
+@each $class in $classes {
+  .funnel-icon-#{$class} {
+    @extend %funnel-icon;
+    background-position: -($i * $offset * 1px) 0;
+  }
+
+  .active .funnel-icon-#{$class} { background-position: -($i * $offset * 1px) (-1 * $offset * 1px); }
+
+  .service-icon-#{$class} {
+    @extend %service-icon;
+    background-position: -($i * $offset * 1px) (-2 * $offset * 1px);
+  }
+
+  .tab-pane:nth-child(3n+1) {
+    .service-icon-#{$class} {
+      background-position: -($i * $offset * 1px) (-3 * $offset * 1px);
+    }
+
+    @include respond-to(sm) {
+      .service-icon-#{$class} {
+        background-position: -($i * $offset * 1px) (-2 * $offset * 1px);
+      }
+    }
+  }
+
+  $i: $i + 1;
+}

@@ -1,0 +1,21 @@
+---
+title: '404 Not Found'
+directory_index: false
+---
+
+.page-header-container
+  .page-header-image.index
+    .video-container
+      %video#bgvid{autoplay: "", loop: "", :data => {"min-width-769" => '<source src="/video/lightbulb.mp4" type="video/mp4">'}}
+        -# %source{src: "/video/lightbulb.mp4", type: "video/mp4"}
+    .page-header-overlay
+  .container
+    %a.header-logo{:href => '/'}
+    %h1.page-head
+      404
+      %em.text-shuffle{:data => {'word-array' => '["missing", "dead link"]'}} not found
+
+    %p.sub-head The page you were looking for was not found. Please check the URL again or try a different page.
+    %a.button{:href => '/'} Go back to home
+
+= partial 'partials/main-menu'

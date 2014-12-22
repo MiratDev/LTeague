@@ -1,0 +1,13 @@
+.cta-secondary
+  .container
+    .row
+      .col-md-4.cta-button-container
+        %a.button.secondary.prev-service{:href => "#{current_page.data.prev_service_link}"}
+          &laquo;
+          = current_page.data.prev_service_label
+      .col-md-4.cta-button-container
+
+      .col-md-4.cta-button-container
+        %a.button.secondary.next-service{:href => "#{current_page.data.next_service_link}"}
+          = current_page.data.next_service_label
+          &raquo;

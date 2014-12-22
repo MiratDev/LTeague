@@ -1,0 +1,272 @@
+.header-wrap {}
+
+header {
+  @include container;
+}
+
+.header-logo {
+  width: 170px;
+  height: 70px;
+  background: url(../images/logo-sprite.png) left top no-repeat;
+  margin-bottom: 50px;
+  display: none;
+
+  @include respond-to(sm) {
+    visibility: visible;
+    display: block;
+  }
+}
+
+.page-header-container {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+
+  .container {
+    padding: 70px 15px 30px;
+    position: relative;
+    z-index: 10;
+
+    @include respond-to(sm) {
+      padding-top: 30px;
+    }
+  }
+
+  @include respond-to(sm) {
+    padding-bottom: 100px;
+  }
+}
+
+.page-header-container,
+.page-header-overlay,
+.page-header-image {
+  width: 100%;
+}
+
+.page-header-image {
+  min-height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+
+  &.index {
+    background: url(../images/lightbulb-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+    @include respond-to(sm) {
+      background-image: url(../images/lightbulb-bg.jpg);
+    }
+  }
+
+  &.about {
+    background: url(../images/about-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/about-bg.jpg);
+    }
+  }
+
+  &.services {
+    background: url(../images/services-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/services-bg.jpg);
+    }
+  }
+
+  &.contact {
+    background: #747474 url(../images/ashley-bg-new-sm.jpg) no-repeat right bottom;
+    background-size: auto 100%;
+
+    > .page-header-overlay {
+      background: url(../images/half-blue-wash-new.png) repeat-y left bottom;
+      background: -moz-linear-gradient(left, rgba(20,91,118,0.8) 0%, rgba(20,91,118,0.79) 1%, rgba(5,21,27,0) 77%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(20,91,118,0.8)), color-stop(1%,rgba(20,91,118,0.79)), color-stop(77%,rgba(5,21,27,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.79) 1%,rgba(5,21,27,0) 77%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.79) 1%,rgba(5,21,27,0) 77%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.79) 1%,rgba(5,21,27,0) 77%,rgba(0,0,0,0) 100%); /* IE10+ */
+      background: linear-gradient(to right, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.79) 1%,rgba(5,21,27,0) 77%,rgba(0,0,0,0) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc145b76', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+    }
+
+    @include respond-to(sm) {
+      background-image: url(../images/ashley-bg-new.jpg);
+      background-position: right top;
+      background-size: cover;
+    }
+  }
+
+  &.define {
+    background: url(../images/define-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/define-bg.jpg);
+    }
+  }
+
+  &.build {
+    background: url(../images/build-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/build-bg.jpg);
+    }
+  }
+
+  &.improve {
+    background: url(../images/improve-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/improve-bg.jpg);
+    }
+  }
+
+  &.measure {
+    background: url(../images/measure-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/measure-bg.jpg);
+    }
+  }
+
+  &.train {
+    background: url(../images/train-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/train-bg.jpg);
+    }
+  }
+
+
+  &.ans {
+    background: url(../images/ans-case-study-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/ans-case-study-bg.jpg);
+    }
+  }
+
+  &.hope {
+    background: url(../images/hope-case-study-bg-sm.jpg) no-repeat center center;
+    background-size: cover;
+
+    @include respond-to(sm) {
+      background-image: url(../images/hope-case-study-bg.jpg);
+    }
+  }
+}
+
+.page-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  background: url(../images/blue-green-wash.png) no-repeat center center;
+  background: -moz-linear-gradient(-45deg, rgba(20,91,118,0.8) 0%, rgba(20,91,118,0.8) 20%, rgba(189,215,61,0.8) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(20,91,118,0.8)), color-stop(20%,rgba(20,91,118,0.8)), color-stop(100%,rgba(189,215,61,0.8))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.8) 20%,rgba(189,215,61,0.8) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.8) 20%,rgba(189,215,61,0.8) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.8) 20%,rgba(189,215,61,0.8) 100%); /* IE10+ */
+  background: linear-gradient(135deg, rgba(20,91,118,0.8) 0%,rgba(20,91,118,0.8) 20%,rgba(189,215,61,0.8) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc145b76', endColorstr='#ccbdd73d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  background-size: cover;
+
+  &.blue {
+    background: url(../images/full-blue-wash.png) repeat left top;
+  }
+}
+
+.page-head {
+  font-size: 30px;
+  line-height: 0.9;
+
+  em {
+    font-style: normal;
+    color: $agile-green;
+  }
+
+  &.green {
+    color: $agile-blue;
+
+    em {
+      color: $white;
+    }
+  }
+
+  .text-shuffle {
+    display: block;
+
+    &.text-shuffle-inline {
+      display: inline;
+    }
+  }
+}
+
+.sub-head {
+  color: $white;
+}
+
+@include respond-to(sm) {
+  .page-head {
+    font-size: 48px;
+  }
+
+  .sub-head {
+    font-size: 18px;
+  }
+}
+
+@include respond-to(md) {
+  .page-head {
+    font-size: 60px;
+  }
+
+  .sub-head {
+    font-size: 20px;
+  }
+}
+
+@include respond-to(lg) {
+  .page-head {
+    font-size: 72px;
+  }
+
+  .sub-head {
+    font-size: 24px;
+  }
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+#bgvid {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 -100%;
+
+  display: none;
+
+  @include respond-to(sm) {
+    display: inline-block;
+  }
+}

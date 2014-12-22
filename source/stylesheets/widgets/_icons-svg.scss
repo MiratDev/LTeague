@@ -1,0 +1,412 @@
+.build-tab-link,
+.define-tab-link,
+.improve-tab-link,
+.measure-tab-link,
+.train-tab-link {
+  h3, p {
+    @include transition(color 0.3s ease-in-out)
+  }
+
+  svg {
+    @include transition;
+    height: 90px;
+    width: 90px;
+    margin: 15px -100% auto;
+  }
+  &:hover,&.active {
+    svg {
+      width: 120px;
+      height: 120px;
+      margin-top: 0;
+    }    
+  }
+}
+
+
+%icon {
+  @include transition;
+  height: 90px;
+  width: 90px;
+  margin: 15px -100% auto;
+
+  &:hover {
+    width: 120px;
+    height: 120px;
+    margin-top: 0;
+  }
+}
+
+.build-tab-link{
+  .build-svg {
+
+    g path {
+      -webkit-transition-property: stroke, fill, -webkit-transform;
+      -moz-transition-property: stroke, fill, -moz-transform;
+      -o-transition-property: stroke, fill, -o-transform;
+      transition-property: stroke, fill, transform;
+
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+
+      fill: $agile-blue;
+    }
+
+    .gear-outer {
+      -webkit-transform-origin: 45px 45px;
+      -moz-transform-origin: 45px 45px;
+      -ms-transform-origin: 45px 45px;
+      -o-transform-origin: 45px 45px;
+      transform-origin: 45px 45px;
+
+      fill: $agile-blue;
+    }
+
+  }
+  &:hover,&.active {
+    .build-svg {
+      .gear-outer {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        -ms-transform: rotate(135deg); 
+      }
+
+      
+    }
+  }
+
+  &.active {
+    .build-svg {
+      g path {
+        fill: $agile-green;
+      }
+    }
+  }
+}
+
+.define-tab-link {
+
+
+  .define-svg {
+    g path, g circle {
+      -webkit-transition-property: stroke, fill, -webkit-transform;
+      -moz-transition-property: stroke, fill, -moz-transform;
+      -o-transition-property: stroke, fill, -o-transform;
+      transition-property: stroke, fill, transform;
+
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+
+      fill: $agile-blue;
+    }
+
+
+    .define-dot-1,
+    .define-dot-2,
+    .define-dot-3 {
+      opacity: 0;
+      @include transition;
+    }
+
+    .define-dot-1 {
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0;
+    }
+
+    .define-dot-3 {
+      -webkit-transition-delay: 0.15s;
+      -moz-transition-delay: 0.15s;
+      -o-transition-delay: 0.15s;
+      transition-delay: 0.15s;
+    }
+
+    .define-dot-2 {
+      -webkit-transition-delay: 0.3s;
+      -moz-transition-delay: 0.3s;
+      -o-transition-delay: 0.3s;
+      transition-delay: 0.3s;
+    }
+  }
+
+  &:hover,&.active {
+    .define-svg {
+      .define-dot-1,
+      .define-dot-2,
+      .define-dot-3 {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.active {
+    .define-svg {
+      g path, g circle {
+        fill: $agile-green;
+        -webkit-transition-delay: 0;
+        -moz-transition-delay: 0;
+        -o-transition-delay: 0;
+        transition-delay: 0;
+      }
+    }
+  }
+}
+
+.improve-tab-link{
+  .improve-svg {
+    @extend %icon;
+
+    g path, g circle {
+      -webkit-transition-property: stroke, fill, -webkit-transform;
+      -moz-transition-property: stroke, fill, -moz-transform;
+      -o-transition-property: stroke, fill, -o-transform;
+      transition-property: stroke, fill, transform;
+
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+
+      fill: $agile-blue;
+    }
+
+    .arm {
+      -webkit-transition-property: stroke, fill, -webkit-transform;
+      -moz-transition-property: stroke, fill, -moz-transform;
+      -o-transition-property: stroke, fill, -o-transform;
+      transition-property: stroke, fill, transform;
+
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+
+      -webkit-transform-origin: 45px 45px;
+      -moz-transform-origin: 45px 45px;
+      -ms-transform-origin: 45px 45px;
+      -o-transform-origin: 45px 45px;
+      transform-origin: 45px 45px;
+    }
+
+  }
+  &:hover,&.active {
+    .improve-svg {
+      .arm{
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg); 
+      }
+    }
+  }
+
+  &.active {
+    .improve-svg {
+      g path, g circle {
+        fill: $agile-green;
+      }
+    }
+  }
+}
+
+.measure-tab-link {
+  .measure-svg {
+    g path, g polygon, g polyline {
+      -webkit-transition-property: stroke, fill, -webkit-transform;
+      -moz-transition-property: stroke, fill, -moz-transform;
+      -o-transition-property: stroke, fill, -o-transform;
+      transition-property: stroke, fill, transform;
+
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+
+      fill: $agile-blue;
+    }
+
+    g polyline {
+      fill: none;
+      stroke: $agile-blue;
+    }
+
+    .measure-line {
+      stroke-dasharray: 110;
+      stroke-dashoffset: 110;
+      @include transition;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+  }
+
+  &:hover,&.active {
+    .measure-svg {
+      .measure-line {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+
+  &.active {
+    .measure-svg {
+      g polygon {
+        fill: $agile-green;
+      }
+
+      g polyline {
+        stroke: $agile-green;
+      }
+    }
+  }
+}
+
+
+.train-tab-link {
+  .train-svg {
+    g path {
+      -webkit-transition-property: fill, -webkit-transform;
+      -moz-transition-property: fill, -moz-transform;
+      -o-transition-property: fill, -o-transform;
+      transition-property: fill, transform;
+
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+
+      fill: $agile-blue;
+    }
+
+    rect {
+      -webkit-transition-property: stroke;
+      -moz-transition-property: stroke;
+      -o-transition-property: stroke;
+      transition-property: stroke;
+
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+
+      -webkit-transition-timing-function: ease-in-out;
+      -moz-transition-timing-function: ease-in-out;
+      -o-transition-timing-function: ease-in-out;
+      transition-timing-function: ease-in-out;
+
+      stroke: $agile-blue;
+    }
+
+    .switch-1,
+    .switch-2,
+    .switch-3 {
+      @include transition;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    } 
+    .switch-1 {
+      transform: translate(0,8px);
+      -ms-transform: translate(0,8px); /* IE 9 */
+      -webkit-transform: translate(0,8px); /* Safari and Chrome */
+      -o-transform: translate(0,8px); /* Opera */
+      -moz-transform: translate(0,8px); /* Firefox */
+    }
+
+    .switch-2 {
+      transform: translate(0,22px);
+      -ms-transform: translate(0,22px); /* IE 9 */
+      -webkit-transform: translate(0,22px); /* Safari and Chrome */
+      -o-transform: translate(0,22px); /* Opera */
+      -moz-transform: translate(0,22px); /* Firefox */
+    }
+
+    .switch-3 {
+      transform: translate(0,-15px);
+      -ms-transform: translate(0,-15px); /* IE 9 */
+      -webkit-transform: translate(0,-15px); /* Safari and Chrome */
+      -o-transform: translate(0,-15px); /* Opera */
+      -moz-transform: translate(0,-15px); /* Firefox */
+    }
+  }
+
+  &:hover,&.active {
+    .train-svg{
+      .switch-1 {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0); /* IE 9 */
+        -webkit-transform: translate(0,0); /* Safari and Chrome */
+        -o-transform: translate(0,0); /* Opera */
+        -moz-transform: translate(0,0); /* Firefox */
+      }
+
+      .switch-2 {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0); /* IE 9 */
+        -webkit-transform: translate(0,0); /* Safari and Chrome */
+        -o-transform: translate(0,0); /* Opera */
+        -moz-transform: translate(0,0); /* Firefox */
+      }
+
+      .switch-3 {
+        transform: translate(0,0);
+        -ms-transform: translate(0,0); /* IE 9 */
+        -webkit-transform: translate(0,0); /* Safari and Chrome */
+        -o-transform: translate(0,0); /* Opera */
+        -moz-transform: translate(0,0); /* Firefox */
+      }
+    }
+  }
+
+  &.active {
+    .train-svg {
+      g path {
+        fill: $agile-green;
+      }
+
+      rect {
+        stroke: $agile-green;
+      }
+    }
+  }
+}
+
