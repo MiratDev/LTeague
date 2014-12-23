@@ -17,7 +17,7 @@ page: 'Home'
       %br
       Guide
     %p.sub-head
-      A simple, sortable table to quickly compare basic features between various Squarespace Templates
+      A simple, sortable table to compare basic features between various Squarespace templates
       %br
     %p.sub-head.text-right
       %i
@@ -29,13 +29,17 @@ page: 'Home'
 .page-body
   .content-wrap
     .container
-      %h2 Templates
+      .row
+        .col-sm-8.col-sm-offset-2
+          %p.text-center
+            Choosing the right Squarespace template isn’t always the easiest process, as there is really no way to view all templates at once or compare features. Since we <a href="http://agilestyle-builds-on.squarespace.com/" target="_blank">build on Squarespace</a> pretty often, we’ve decided to put together this handy chart that compares features and limitations of each template, as well as the categories they appear in on the <a href="http://squarespace.com/templates" target="_blank">Squarespace site</a>.
+
       %table.comparison.display.responsive
         %thead
           %tr
             %th Name
             %th Categories
-            %th Page Header Style
+            %th Page Header Type
             %th Index Page
             %th Sidebar Type
             %th Nav Type
@@ -46,7 +50,7 @@ page: 'Home'
           %tr
             %th Name
             %th Categories
-            %th Page Header Style
+            %th Page Header Type
             %th Index Page
             %th Sidebar Type
             %th Nav Type
@@ -541,7 +545,19 @@ page: 'Home'
               %a{:href => 'http://wells-demo.squarespace.com/', :target => '_blank'} Demo
             %td.text-center
 
-
+      .row
+        .col-sm-6.col-sm-offset-3
+          %br
+          %p.text-center
+            Questions? Feel free to contact us.
+            %br
+            %a{:href => 'mailto:info@agilestyle.com', :target => '_blank'}
+              %i.fa.fa-envelope
+                info@agilestyle.com
+            %br
+            %a{:href => 'https://twitter.com/AgileStyleInc', :target => '_blank'}
+              %i.fa.fa-twitter
+                @AgileStyleInc
       -#
         .footnotes
           .row
