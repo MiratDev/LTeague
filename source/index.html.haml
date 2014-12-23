@@ -16,7 +16,14 @@ page: 'Home'
       %em Template
       %br
       Guide
-    %p.sub-head A simple, sortable table to quickly compare basic features between various Squarespace Templates
+    %p.sub-head
+      A simple, sortable table to quickly compare basic features between various Squarespace Templates
+      %br
+    %p.sub-head.text-right
+      %i
+        %sup
+          Last updated
+          = Time.now.strftime("%Y/%m/%d")
 
 
 .page-body
@@ -29,7 +36,7 @@ page: 'Home'
             %th Name
             %th Categories
             %th Page Header Style
-            %th Index (Y/N)
+            %th Index Page
             %th Sidebar Type
             %th Nav Type
             %th Secondary Nav
@@ -39,7 +46,7 @@ page: 'Home'
             %th Name
             %th Categories
             %th Page Header Style
-            %th Index?
+            %th Index Page
             %th Sidebar Type
             %th Nav Type
             %th Secondary Nav
