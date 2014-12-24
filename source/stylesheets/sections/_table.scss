@@ -1,6 +1,6 @@
 table.dataTable {
 
-  // width: 100% !important;
+  width: 100% !important;
 
 	th {
     padding: 10px 30px 10px 20px;
@@ -28,18 +28,24 @@ table.dataTable {
     }
 
     &.sorting {
+      background: none;
+
     	&:after {
     		content: '\f0dc';
     	}
     }
 
     &.sorting_asc {
+      background: none;
+
       &:after {
         content: '\f0de';
       }
     }
 
     &.sorting_desc {
+      background: none;
+
       &:after {
         content: '\f0dd';
       }

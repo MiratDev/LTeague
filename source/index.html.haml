@@ -16,209 +16,553 @@ page: 'Home'
       %em Template
       %br
       Guide
-    %p.sub-head A simple, sortable table to quickly compare basic features between various Squarespace Templates
+    %p.sub-head
+      A simple, sortable table to compare basic features between various Squarespace templates
+      %br
+    %p.sub-head.text-right
+      %i
+        %sup
+          Last updated
+          = Time.now.strftime("%Y/%m/%d")
 
 
 .page-body
   .content-wrap
     .container
-      %h2 Templates
+      .row
+        .col-sm-8.col-sm-offset-2
+          %p.text-center
+            Choosing the right Squarespace template isn’t always the easiest process, as there is really no way to view all templates at once or compare features. Since we <a href="http://agilestyle-builds-on.squarespace.com/" target="_blank">build on Squarespace</a> pretty often, we’ve decided to put together this handy chart that compares features and limitations of each template, as well as the categories they appear in on the <a href="http://squarespace.com/templates" target="_blank">Squarespace site</a>.
+
       %table.comparison.display.responsive
         %thead
           %tr
             %th Name
-            %th.tablet.desktop Categories
-            %th.desktop Page Header Style
-            %th.desktop Index (Y/N)
-            %th.desktop Sidebar Type
-            %th.desktop Nav Type
-            %th.tablet.desktop Secondary Nav (Y/N)
-            %th.desktop Links
+            %th Categories
+            %th Page Header Type
+            %th Index Page
+            %th Sidebar Type
+            %th Nav Type
+            %th Secondary Nav
+            %th Links
+            %th Fav
         %tfoot
           %tr
             %th Name
             %th Categories
-            %th Page Header Style
-            %th Index?
+            %th Page Header Type
+            %th Index Page
             %th Sidebar Type
             %th Nav Type
-            %th Secondary Nav (Y/N)
+            %th Secondary Nav
             %th Links
+            %th Fav
 
         %tbody
           %tr
             %td Adirondack
-            %td Business, Store, Personal
+            %td Businesses, Stores, Personal
             %td Image, Full Width, Text
             %td No
             %td None
             %td Fixed
-            %td Yes
+            %td Footer
             %td 
               %a{:href => 'http://adirondack-demo.squarespace.com/' , :target => '_blank'} Demo
-              %br
               %a{:href => 'http://adirondack-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Adversary
             %td Musicians
-            %td Full Width, Image&Text
+            %td Full Width, Image&amp;Text
             %td Yes
             %td None
             %td Static, Fixed
             %td Footer
             %td
               %a{:href => 'http://adversary-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://adversary-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Alex
-            %td Wedding
-            %td Full Width, Image&Text
+            %td Weddings
+            %td Full Width, Image&amp;Text
             %td Yes
             %td Index
             %td Static, Fixed
             %td Footer
             %td
               %a{:href => 'http://alex-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://alex-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Anya
-            %td Wedding
-            %td Full Width, Image&Text
+            %td Weddings
+            %td Full Width, Image&amp;Text
             %td Yes
             %td Blog, Folder, Products
             %td Static, Fixed
             %td Footer
             %td
               %a{:href => 'http://anya-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://anya-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Aubrey
-            %td Wedding
-            %td None
+            %td Weddings
+            %td N/A
             %td No
             %td None
             %td Static
-            %td No
+            %td None
             %td
               %a{:href => 'http://aubrey-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://aubrey-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Avenue
-            %td Portfolio, Store, Personal
-            %td None
+            %td Personal, Portfolios, Stores
+            %td N/A
             %td Yes
             %td Blog
             %td Static
-            %td No
+            %td None
             %td
               %a{:href => 'http://avenue-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://avenue-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+              %i.fa.fa-star
 
           %tr
             %td Aviator
-            %td Business, Personal
-            %td None
+            %td Businesses, Personal
+            %td N/A
             %td No
             %td None
             %td Fixed, Sidebar
-            %td No
+            %td None
             %td
               %a{:href => 'http://aviator-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://aviator-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Bedford
-            %td Business, Personal
-            %td Full Width, Image&Text
+            %td Businesses, Personal
+            %td Full Width, Image&amp;Text
             %td Yes
-            %td Folder, Product Categories, Blog
-            %td Static, Fixed (In Index)
+            %td Blog, Folder, Product Categories
+            %td Fixed (In Index), Static
             %td Footer
             %td
               %a{:href => 'http://bedford-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://bedford-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Boutique
             %td N/A
-            %td None
+            %td N/A
             %td No
             %td None
-            %td Static, Fixed
+            %td Fixed, Static
             %td None
             %td
               %a{:href => 'http://boutique-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://boutique-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Bryant
-            %td Business
-            %td Full Width, Image&Text
-            %td Index?
-            %td Sidebar Type
-            %td Static, Fixed (In Index)
+            %td Businesses
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td Blog, Folder, Index, Products
+            %td Fixed (In Index), Static
             %td Footer
             %td
               %a{:href => 'http://bryant-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://bryant-demo.squarespace.com/read-me', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Charlotte
             %td Weddings
-            %td Full Width, Image&Text
+            %td Full Width, Image&amp;Text
             %td Yes
             %td None
-            %td Static, Fixed (In Index)
-            %td 
+            %td Fixed (In Index), Static
+            %td Footer
             %td
               %a{:href => 'http://charlotte-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://charlotte-demo.squarespace.com/read-me', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Dovetail
-            %td Business, Stores
+            %td Businesses, Stores
             %td Image
             %td No
             %td Blog
             %td Static
-            %td 
+            %td Footer
             %td
               %a{:href => 'http://dovetail-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
               %a{:href => 'http://dovetail-demo.squarespace.com/read-me', :target => '_blank'} Readme
+            %td.text-center
+
 
           %tr
             %td Encore
-            %td Musician
-            %td Header Style
-            %td Index?
-            %td Sidebar Type
-            %td Nav Type
-            %td Secondary Nav?
+            %td Musicians
+            %td N/A
+            %td No
+            %td None
+            %td Static
+            %td None
             %td
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Demo
-              %br
-              %a{:href => 'http://-demo.squarespace.com/', :target => '_blank'} Readme
+              %a{:href => 'http://encore-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://encore-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
 
-      .footnotes
-        .row
-          .col-xs-12
-            %h3 Additional Information
-            %ol
-              %li Example fact one.
-              %li Example face two.
+
+          %tr
+            %td Five
+            %td Businesses, Restaurants
+            %td Full Width, Image&amp;Text
+            %td No
+            %td None
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://five-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://five-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Flatiron
+            %td Portfolios
+            %td N/A
+            %td No
+            %td None
+            %td Fixed, Static
+            %td None
+            %td
+              %a{:href => 'http://flatiron-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://flatiron-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Forte
+            %td Portfolios, Restaurants
+            %td N/A
+            %td Yes
+            %td None
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://forte-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://forte-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Frontrow
+            %td Portfolios
+            %td N/A
+            %td No
+            %td Blog
+            %td Static
+            %td Header
+            %td
+              %a{:href => 'http://frontrow-demo.squarespace.com/', :target => '_blank'} Demo
+            %td.text-center
+              %i.fa.fa-star
+
+          %tr
+            %td Fulton
+            %td Businesses, Stores
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td None
+            %td Static
+            %td Footer
+            %td
+              %a{:href => 'http://fulton-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://fulton-demo.squarespace.com/readme/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Galapagos
+            %td Stores
+            %td N/A
+            %td No
+            %td Blog
+            %td Static
+            %td Footer
+            %td
+              %a{:href => 'http://galapagos-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://galapagos-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Hayden
+            %td Businesses
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td Blog, Folder, Products
+            %td Fixed (In Index), Static
+            %td Footer
+            %td
+              %a{:href => 'http://hayden-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://hayden-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+              %i.fa.fa-star
+
+          %tr
+            %td Horizon
+            %td Musicians
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td None
+            %td Static
+            %td Footer
+            %td
+              %a{:href => 'http://horizon-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://horizon-demo.squarespace.com/readme/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Ishimoto
+            %td Businesses, Portfolios, Stores, Restaurants
+            %td N/A
+            %td No
+            %td Blog
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://ishimoto-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://ishimoto-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Julia
+            %td Weddings
+            %td Fixed Width, Image, Text
+            %td Yes
+            %td Gallery
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://julia-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://julia-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Marquee
+            %td Businesses, Restaurants
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td Index
+            %td Fixed, Static
+            %td Footer
+            %td
+              %a{:href => 'http://marquee-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://marquee-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Momentum
+            %td Portfolios
+            %td Fixed Width, Text
+            %td Yes
+            %td None
+            %td Fixed
+            %td None
+            %td
+              %a{:href => 'http://momentum-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://momentum-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Montauk
+            %td Businesses, Portfolios, Stores, Restaurants
+            %td Fixed Width, Image&amp;Text
+            %td Yes
+            %td Gallery
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://montauk-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://montauk-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Naomi
+            %td Weddings
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td None
+            %td Static
+            %td Footer
+            %td
+              %a{:href => 'http://naomi-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://naomi-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Native
+            %td Personal
+            %td N/A
+            %td No
+            %td None
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://native-demo.squarespace.com/', :target => '_blank'} Demo
+            %td.text-center
+
+
+          %tr
+            %td Om
+            %td Businesses
+            %td Fixed Width, Image&amp;Text
+            %td Yes
+            %td Gallery
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://om-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://om-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Pacific
+            %td Businesses, Personal, Restaurants
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td None
+            %td Fixed (In Index), Static
+            %td Footer
+            %td
+              %a{:href => 'http://pacific-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://pacific-demo.squarespace.com/readme/', :target => '_blank'} Readme
+            %td.text-center
+              %i.fa.fa-star
+
+          %tr
+            %td Peak
+            %td Restaurants
+            %td Full Width, Image&amp;Text
+            %td No
+            %td None
+            %td Fixed, Static
+            %td None
+            %td
+              %a{:href => 'http://peak-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://peak-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Shift
+            %td Personal
+            %td Full Width, Image&amp;Text
+            %td Yes
+            %td Index
+            %td Fixed, Static
+            %td Footer
+            %td
+              %a{:href => 'http://shift-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://shift-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Supply
+            %td Stores
+            %td N/A
+            %td Yes
+            %td None
+            %td Fixed
+            %td Under Primary
+            %td
+              %a{:href => 'http://supply-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://supply-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Wells
+            %td Portfolios
+            %td N/A
+            %td No
+            %td Blog
+            %td Fixed, Static
+            %td Sidebar
+            %td
+              %a{:href => 'http://wells-demo.squarespace.com/', :target => '_blank'} Demo
+              %a{:href => 'http://wells-demo.squarespace.com/read-me/', :target => '_blank'} Readme
+            %td.text-center
+
+
+          %tr
+            %td Wexley
+            %td Portfolios
+            %td N/A
+            %td No
+            %td Blog
+            %td Static
+            %td None
+            %td
+              %a{:href => 'http://wells-demo.squarespace.com/', :target => '_blank'} Demo
+            %td.text-center
+
+      .row
+        .col-sm-6.col-sm-offset-3
+          %br
+          %p.text-center
+            Questions? Feel free to contact us.
+            %br
+            %a{:href => 'mailto:info@agilestyle.com', :target => '_blank'}
+              %i.fa.fa-envelope
+                info@agilestyle.com
+            %br
+            %a{:href => 'https://twitter.com/AgileStyleInc', :target => '_blank'}
+              %i.fa.fa-twitter
+                @AgileStyleInc
+      -#
+        .footnotes
+          .row
+            .col-xs-12
+              %h3 Additional Information
+              %ol
+                %li Example fact one.
+                %li Example face two.

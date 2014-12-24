@@ -3,6 +3,5 @@
 //= require "vendor/respond"
 //= require "vendor/jquery.datatables-1.10.4.js"
 //= require "vendor/jquery.datatables.responsive.js"
-//= require "vendor/jquery.datatables.bootstrap.js"
 
 //= require "base/onready.js"
