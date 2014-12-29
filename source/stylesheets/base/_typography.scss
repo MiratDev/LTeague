@@ -118,6 +118,18 @@ a:hover {
   text-decoration: none;
 }
 
+.page-body {
+  a,
+  a:focus,
+  a:visited {
+    color: darken( $link-color, 10% );
+  }
+
+  a:hover {
+    color: darken( $link-hover-color, 10% );
+  }
+}
+
 img {
   display: block;
 }
@@ -126,6 +138,11 @@ img {
   a[href^='tel:'] {
     pointer-events: none;
   }
+}
+
+.intro-text {
+  font-size: 24px;
+  margin-bottom: 60px;
 }
 
 
