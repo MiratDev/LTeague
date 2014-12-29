@@ -1,6 +1,7 @@
 $(window).load ->
   template_table = $('table.comparison').dataTable(
     sDom: '<"top"if<"clear">lp>rt<"bottom"lp><"clear">'
+    order: [[ 1, "asc" ]]
     responsive: true
     lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]]
     oLanguage: {
