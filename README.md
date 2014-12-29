@@ -13,5 +13,4 @@ This little app was inspired by Miko Coffey's [Squarespace 6 Template Comparison
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
-5. Bonus points for test coverage
-6. Create new Pull Request
+5. Create new Pull Request
