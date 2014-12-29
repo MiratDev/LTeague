@@ -4,8 +4,7 @@ A simple, sortable table to compare basic features between various [Squarespace 
 This guide is built on [Middleman](http://middlemanapp.com/) and [DataTables](https://datatables.net/) and is hosted on Github Pages at [squarespaceguide.agilestyle.com](http://squarespaceguide.agilestyle.com/)
 We've put it up on github so you can contribute in any way you see fit. (Typically, this will be with content additions/revisions, as Squarespace adds, removes, and/or changes template features)
 
-This little app was inspired by Miko Coffey's [Squarespace 6 Template Comparison Chart.](http://www.usingmyhead.com/squarespace-6-template-comparison-chart/) Once we started working on Squarespace 7 and learned there was unfortunately no other resource for the many new changes brought in by Squarespace 7.
-
+This little app was inspired by Miko Coffey's [Squarespace 6 Template Comparison Chart](http://www.usingmyhead.com/squarespace-6-template-comparison-chart/). Once Squarespace 7 was released, we soon realized that there wasn't an up to date resource for comparing templates anymore, so we decided to make our own.
 
 ## Contributing
 
