@@ -56,6 +56,18 @@ a, button, input {
         border-color: darken($white, 5%);
       }
     }
+
+    &.green {
+      color: darken( $agile-green, 10% );
+      background: none;
+      border-color: darken( $agile-green, 10% );
+
+      &:hover {
+        color: $white;
+        background: darken( $agile-green, 10% );
+        border-color: darken( $agile-green, 10% );
+      }
+    }
    
     @include respond-to (sm) {
       width: auto;
