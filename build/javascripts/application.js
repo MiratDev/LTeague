@@ -1353,7 +1353,8 @@ else if ( jQuery && !jQuery.fn.dataTable.Responsive ) {
   $(window).load(function() {
     var template_table;
     return template_table = $('table.comparison').dataTable({
-      sDom: '<"top"if>rt<"bottom"lp><"clear">',
+      sDom: '<"top"if<"clear">lp>rt<"bottom"lp><"clear">',
+      order: [[1, "asc"]],
       responsive: true,
       lengthMenu: [[10, 25, 50, -1], [10, 25, 50, "All"]],
       oLanguage: {
