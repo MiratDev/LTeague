@@ -58,14 +58,14 @@ a, button, input {
     }
 
     &.green {
-      color: darken( $agile-green, 10% );
+      color: $agile-green;
       background: none;
-      border-color: darken( $agile-green, 10% );
+      border-color: $agile-green;
 
       &:hover {
-        color: $white;
-        background: darken( $agile-green, 10% );
-        border-color: darken( $agile-green, 10% );
+        color: $agile-blue;
+        background: $agile-green;
+        border-color: $agile-green;
       }
     }
    
