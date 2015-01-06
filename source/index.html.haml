@@ -566,9 +566,15 @@ page: 'Home'
 .cta-block
   .container
     .row
-      .col-sm-4.col-sm-offset-1.text-center
+      .col-sm-5.text-center
         %p
-          Example content? There will be some text here that talks about signing up for our super handy '6 Steps' guide.
+          Still stuck? AgileStyle builds Squarespace sites, and we can help get yours up and running.
+        %a.button.green{:href => 'http://hire-experts.squarespace.com/'}
+          Learn More
+      .col-sm-5.col-sm-offset-1.text-center
+        %p
+          Or if you're the do-it-yourself type, download our FREE guide:
+          %i 6 Steps to a Successful Squarespace Website.
         .subscribe-form
           / Begin MailChimp Signup Form
           #mc_embed_signup
@@ -579,7 +585,7 @@ page: 'Home'
                 / real people should not fill this in and expect good things - do not remove this or risk form bot signups
                 %div{:style => "position: absolute; left: -5000px;"}
                   %input{:name => "b_5690aae539107201f81977b6c_adbf231951", :tabindex => "-1", :type => "text", :value => ""}/
-                %input#mc-embedded-subscribe.subscribe-button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+                %input#mc-embedded-subscribe.subscribe-button{:name => "subscribe", :type => "submit", :value => "Download"}/
           #mce-responses.clear
             #mce-error-response.response{:style => "display:none"}
             #mce-success-response.response{:style => "display:none"}
@@ -587,8 +593,3 @@ page: 'Home'
           :javascript
             (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
           / End mc_embed_signup
-      .col-sm-4.col-sm-offset-2.text-center
-        %p
-          Still stuck? AgileStyle builds Squarespace sites, and we can help get yours up and running.
-        %a.button.green{:href => 'http://hire-experts.squarespace.com/'}
-          Learn More
