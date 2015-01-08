@@ -1,6 +1,0 @@
-Redirect 301 /portfolio /services
-Redirect 301 /process /services
-Redirect 301 /blog /
-Redirect 301 /careers /about
-
-ErrorDocument 404 /404/index.html
