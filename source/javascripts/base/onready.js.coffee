@@ -11,7 +11,7 @@ $(window).load ->
       },
       sLengthMenu: "Show _MENU_ templates",
       sZeroRecords: "No templates to display",
-      sInfo: "Showing (_START_ to _END_) templates",
+      sInfo: "Showing _START_ to _END_ of _TOTAL_ templates",
       sInfoFiltered: " (filtered from _MAX_ templates)"  
     }
   );
