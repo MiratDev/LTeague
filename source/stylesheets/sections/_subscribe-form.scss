@@ -1,0 +1,49 @@
+.subscribe-form {
+
+  .input-group {
+    position: relative;
+    height: 56px;
+  }
+
+  .email {
+    @include border-radius(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 120px;
+    outline: none;
+    height: 56px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    border: 2px solid #ddd;
+  }
+
+  .subscribe-button {
+    @include transition();
+    @include border-radius(0 3px 3px 0);
+    @include header-font-stack-3;
+    text-transform: uppercase;
+    height: 56px;
+    width: 100px;
+    min-width: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    background: $agile-blue;
+    border: 2px solid $agile-green;
+    color: $agile-green;
+
+    &:hover {
+      background: $agile-green;
+      color: $agile-blue;
+    }
+  }
+
+  #mce-responses {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+}

@@ -13,8 +13,11 @@
 
 @import "vendor/datatables.min";
 @import "vendor/datatables.responsive";
+
 @import "sections/table";
 @import "sections/footnotes";
+@import "sections/cta";
+@import "sections/subscribe-form";
 
 @import "widgets/main-nav";
 @import "widgets/buttons";

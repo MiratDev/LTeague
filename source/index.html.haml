@@ -65,7 +65,7 @@ page: 'Home'
           %tr
             %td.text-center
             %td Adirondack
-            %td Businesses, Stores, Personal
+            %td Businesses, Personal, Stores
             %td Image, Full Width, Text
             %td No
             %td None
@@ -358,7 +358,7 @@ page: 'Home'
           %tr
             %td.text-center
             %td Ishimoto
-            %td Businesses, Portfolios, Stores, Restaurants
+            %td Businesses, Portfolios, Restaurants, Stores
             %td N/A
             %td No
             %td Blog
@@ -414,7 +414,7 @@ page: 'Home'
           %tr
             %td.text-center
             %td Montauk
-            %td Businesses, Portfolios, Stores, Restaurants
+            %td Businesses, Portfolios, Restaurants, Stores
             %td Fixed Width, Image&amp;Text
             %td Yes
             %td Gallery
@@ -547,20 +547,13 @@ page: 'Home'
             %td None
             %td
               %a{:href => 'http://wells-demo.squarespace.com/', :target => '_blank'} Demo
-
       .row
         .col-sm-8.col-sm-offset-2.text-center
-          %br
           %p
             Starred templates (<i class='fa fa-star'></i>) indicate AgileStyle's favourite templates for overall usefulness. When building Squarespace sites, we find ourselves coming back to these templates time and time again because of their flexibility.
           %p
             %em
               This site was inspired by Miko Coffey's awesome <a href='http://www.usingmyhead.com/squarespace-6-template-comparison-chart/' target='_blank'>Squarespace 6 template guide</a>.
-        .col-sm-6.col-sm-offset-3.text-center
-          %p
-            Still stuck? AgileStyle builds Squarespace sites, and we can help get yours up and running.
-          %a.button.green{:href => 'http://hire-experts.squarespace.com/'}
-            Learn More
       -#
         .footnotes
           .row
@@ -569,3 +562,34 @@ page: 'Home'
               %ol
                 %li Example fact one.
                 %li Example face two.
+
+.cta-block
+  .container
+    .row
+      .col-sm-5.text-center
+        %p
+          Still stuck? AgileStyle builds Squarespace sites, and we can help get yours up and running.
+        %a.button.green{:href => 'http://hire-experts.squarespace.com/'}
+          Learn More
+      .col-sm-5.col-sm-offset-1.text-center
+        %p
+          Or if you're the do-it-yourself type, download our FREE guide:
+          %i 6 Steps to a Successful Squarespace Website.
+        .subscribe-form
+          / Begin MailChimp Signup Form
+          #mc_embed_signup
+            %form#mc-embedded-subscribe-form.validate{:action => "//squarespace.us1.list-manage.com/subscribe/post?u=5690aae539107201f81977b6c&id=adbf231951", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+
+              .input-group
+                %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => "", :placeholder => 'Email Address'}/
+                / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                %div{:style => "position: absolute; left: -5000px;"}
+                  %input{:name => "b_5690aae539107201f81977b6c_adbf231951", :tabindex => "-1", :type => "text", :value => ""}/
+                %input#mc-embedded-subscribe.subscribe-button{:name => "subscribe", :type => "submit", :value => "Download"}/
+          #mce-responses.clear
+            #mce-error-response.response{:style => "display:none"}
+            #mce-success-response.response{:style => "display:none"}
+          %script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
+          :javascript
+            (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+          / End mc_embed_signup
