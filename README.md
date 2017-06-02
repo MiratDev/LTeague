@@ -1,15 +1,10 @@
-# Squarespace Template Guide
+# Squarespace Bedford Template
 
-A simple, sortable table to compare basic features between various [Squarespace templates](http://www.squarespace.com/templates/).
-This guide is built on [Middleman](http://middlemanapp.com/) and [DataTables](https://datatables.net/) and is hosted on Github Pages at [squarespaceguide.agilestyle.com](http://squarespaceguide.agilestyle.com/)
-We've put it up on github so you can contribute in any way you see fit. (Typically, this will be with content additions/revisions, as Squarespace adds, removes, and/or changes template features)
 
-This little app was inspired by Miko Coffey's [Squarespace 6 Template Comparison Chart](http://www.usingmyhead.com/squarespace-6-template-comparison-chart/). Once Squarespace 7 was released, we soon realized that there wasn't an up to date resource for comparing templates anymore, so we decided to make our own.
+This uses the Bedford template with additional editing
 
-## Contributing
+[Meta Description Override](https://github.com/MiratDev/LTeague/blob/master/meta_desc_override.js) 
+and 
+[Social Footer](https://github.com/MiratDev/LTeague/blob/master/social_footer.html)
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+and is viewable at [Lucas Teague Psychotherapy](http://www.lucasteaguepsychotherapy.co.uk)
